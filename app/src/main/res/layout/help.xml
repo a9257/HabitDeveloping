@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="@color/bg_color"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:contentInsetEnd="10dp"
+        app:contentInsetStart="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:navigationIcon="@mipmap/icon_back_arrow">
+
+        <TextView
+            android:id="@+id/top_habit_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="使用帮助"
+            android:textColor="@color/colorwhite"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="166dp"
+            tools:layout_editor_absoluteY="14dp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="349dp"
+        android:layout_height="540dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="8dp"
+        android:lineSpacingExtra="4sp"
+        android:text="Tips1：添加习惯 在主导航栏的“今日”菜单下，点击屏幕右上角的“+”，即可进入添加习惯界面。你可以自定义属于你的个性习惯，包括习惯名、图标、习惯时间、打卡次数、提醒时间以及备注。点击屏幕右上角的“✔”即可完成编辑，添加新的习惯。 \n\nTips2：浏览习惯 在主导航栏下的今日菜单中可以浏览到今日不同时间段习惯的打卡进度，全部菜单中可以查看全部习惯卡片。点击习惯卡片即可浏览本月该习惯的打卡情况，同时也可以查看到该习惯的打卡统计。 \n\nTips3：结束习惯 打开习惯卡片后即可在屏幕底端找到“结束习惯”按钮。你可以在主导航栏“我的”菜单下“已结束习惯”中查看到所有结束的习惯。\n\n Tip4：打卡习惯 在主导航栏的“今日”菜单下点击习惯图标即可完成一次该习惯的打卡，同时可以浏览到习惯的今日打卡进度。 "
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar7" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="40dp"
+    android:layout_height="50dp">
+
+    <ImageView
+        android:id="@+id/image_back_date"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView_date"
+        app:srcCompat="@drawable/shadow_date" />
+
+    <TextView
+        android:id="@+id/textView_date"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:text="\n1"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_sign_point"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sign_point" />
+
+
+</android.support.constraint.ConstraintLayout>

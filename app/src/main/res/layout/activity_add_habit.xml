@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddHabit">
+
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="设置提醒时间（可选）："
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/activity_horizontal_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:text="次"
+        android:textSize="@dimen/activity_horizontal_margin"
+        app:layout_constraintStart_toEndOf="@id/editText2"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="55dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/shape_2"
+        android:onClick="fre3"
+        android:padding="0dp"
+        android:text="每月"
+        android:textAlignment="center"
+        android:textColor="@color/bg_color"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/button6"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="55dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/shape_2"
+        android:onClick="fre2"
+        android:padding="0dp"
+        android:text="每周"
+        android:textAlignment="center"
+        android:textColor="@color/bg_color"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/button5"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="55dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="65dp"
+        android:background="@drawable/shape_2"
+        android:onClick="fre1"
+        android:padding="0dp"
+        android:text="每日"
+        android:textAlignment="center"
+        android:textColor="@color/bg_color"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+
+    <Button
+        android:id="@+id/noon"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/shape"
+        android:onClick="time3"
+        android:padding="0dp"
+        android:text="午间习惯"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/morning"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/shape"
+        android:onClick="time4"
+        android:padding="0dp"
+        android:text="晚间习惯"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/noon"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/morning"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/shape"
+        android:onClick="time2"
+        android:padding="0dp"
+        android:text="晨间习惯"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="@color/bg_color"
+        android:gravity="top"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:contentInsetEnd="10dp"
+        app:contentInsetStart="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@mipmap/icon_back_arrow">
+
+        <TextView
+            android:id="@+id/add_habit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="@string/add_habit"
+            android:textColor="@color/colorwhite"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="3dp" />
+
+        <Button
+            android:id="@+id/confirm_button"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="end"
+            android:background="@mipmap/ic_check_white"
+            android:onClick="addaHabit"
+            android:textColor="@color/colorwhite"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="280dp"
+            tools:layout_editor_absoluteY="8dp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/habit_img"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+        app:srcCompat="@drawable/habit_1" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="93dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:hint="给习惯命名"
+        android:inputType="text"
+        android:nextFocusForward="@+id/editText2"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/habit_img" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:text="挑选图标："
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/activity_horizontal_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="346dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <RadioButton
+            android:id="@+id/img1"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/habit_1"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/img2"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/habit_2"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/img3"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/habit_3"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/img4"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/habit_4"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/img5"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/habit_5"
+            android:button="@null" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="在一天的什么时候："
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/activity_horizontal_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/shape"
+        android:onClick="time1"
+        android:padding="0dp"
+        android:text="任意时间"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:text="每日"
+        android:textSize="@dimen/activity_horizontal_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="27dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="6dp"
+        android:inputType="number"
+        android:nextFocusForward="@+id/editText3"
+        android:text="1"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape_time"
+        android:elevation="2dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint="- -   :   - -"
+        android:nextFocusForward="@+id/editText4"
+        android:textAlignment="center"
+        android:textSize="@dimen/activity_horizontal_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="设置打卡次数："
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/activity_horizontal_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="写一句激励自己的话："
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="333dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:inputType="text"
+        android:maxLength="15"
+        android:text="只有千锤百炼，才能成为好钢。"
+        android:textAlignment="viewStart"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+
+</android.support.constraint.ConstraintLayout>

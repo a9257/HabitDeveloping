@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">习惯养成</string>
+    <string name="title_home">Today</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="top_today">今日</string>
+    <string name="top_all">全部</string>
+    <string name="top_mine">我的</string>
+    <string name="add_habit">添加习惯</string>
+    <string name="guanwei">官方微博（开发者主页）</string>
+    <string name="qq">开发者QQ（982728182）</string>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="lightgray">#DCDCDC</color>
+    <color name="colorpure">#00000000</color>
+    <color name="colorwhite">#FFFFFF</color>
+    <color name="light">#f0f0f0</color>
+    <color name="blue">#0000ff</color> <!-- 蓝色 -->
+    <color name="white">#ffffff</color> <!-- 白色 -->
+  <color name="black">#000000</color> <!-- 黑色 -->
+    <color name="azure">#f0ffff</color> <!-- 天蓝色 -->
+    <color name="mediumblue">#0000cd</color> <!-- 中兰色 -->
+    <color name="turquoise">#40e0d0</color>
+    <color name="bg_color">#01bcd4</color>
+    <color name="point_color">#f2535f</color>
+    <color name="bg_dark_color">#02b0c6</color> <!-- 青绿色 -->
+</resources>
