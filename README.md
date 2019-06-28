@@ -1,8 +1,8 @@
 # HabitDeveloping
-Habit developing app on android
+一款习惯养成app，包含设定习惯目标、打卡、习惯提醒、今日卡片等功能。
 
 ## 说明
-一款习惯养成app，包含设定习惯目标、打卡、习惯提醒、今日卡片等功能。
+Android 8.1以上
 
 你可以[点击此处](https://github.com/a925722655/HabitDeveloping/raw/master/app/release/app-release.apk)下载apk安装
 
