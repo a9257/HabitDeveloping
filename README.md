@@ -1,5 +1,5 @@
 # HabitDeveloping
-A habit-developing app on android
+Habit developing app on android
 
 ## 说明
 一款习惯养成app，包含设定习惯目标、打卡、习惯提醒、今日卡片等功能。
