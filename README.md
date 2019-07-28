@@ -2,7 +2,8 @@
 一款习惯养成app，包含设定习惯目标、打卡、习惯提醒、今日卡片等功能。
 
 ## 说明
-Android 8.1以上
+- 系统：Android 8.1以上
+- 分辨率：2340 * 1080
 
 你可以[点击此处](https://github.com/a925722655/HabitDeveloping/raw/master/app/release/app-release.apk)下载apk安装
 
